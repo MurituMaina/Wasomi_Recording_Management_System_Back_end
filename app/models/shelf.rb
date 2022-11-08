@@ -1,9 +1,6 @@
 class Shelf < ActiveRecord::Base
-    belongs_to :book
-    belongs_to :user, through: :book
+    belongs_to :user
 
-    def current_read
-    self.book
-    end
-
+# Relationship of book(s) 
+# Relationship of user/users # Relationship of
 end
