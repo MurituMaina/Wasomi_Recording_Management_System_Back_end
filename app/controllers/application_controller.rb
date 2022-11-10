@@ -28,13 +28,6 @@ class ApplicationController < Sinatra::Base
     books = Book.find(params[:id])
     books.to_json
   end
-
-  # get "/mybooks/:id" do
-  #   my_books = Book.find(params[:id])
-  # end
-
-  # .find_by(book_title: params[:book_title])
-
   get "/users/:id" do
     user = User.find(params[:id])
     user.to_json
