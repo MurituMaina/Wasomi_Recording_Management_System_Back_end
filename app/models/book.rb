@@ -1,5 +1,5 @@
 class Book < ActiveRecord::Base
-    has_many :users, through: :shelves 
     has_many :shelves
+    has_many :users, through: :shelves
     
 end

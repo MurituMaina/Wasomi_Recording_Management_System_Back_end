@@ -3,6 +3,7 @@ class CreateShelves < ActiveRecord::Migration[6.1]
     create_table :shelves do |t|
       t.string :book_title
       t.string :book_category
+      t.integer :book_id
       t.integer :user_id
     end
   end

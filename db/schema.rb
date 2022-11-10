@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 2022_11_08_084226) do
   create_table "shelves", force: :cascade do |t|
     t.string "book_title"
     t.string "book_category"
+    t.integer "book_id"
     t.integer "user_id"
   end
 
