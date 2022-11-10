@@ -14,6 +14,12 @@ class ApplicationController < Sinatra::Base
     books = Book.all
     books.to_json
   end
+  
+  get "/books/:category" do
+    # books = Book.find_by(category: params[:category])
+    books = Book.find(:all)
+    books.to_json
+  end
   get "/shelves" do
     shelves = Shelf.all
     shelves.to_json
